@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { loginUser, LogoutUser, registerUser } from "../controllers/user.controller.js";
 import {upload} from "../middleware/multer.js"
-import veryfyJWT from "../middleware/auth.js"
+import { veryfyJWT } from "../middleware/auth.js";
 const router=Router()
 
 router.route("/register").post(
